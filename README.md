@@ -22,7 +22,7 @@ Questo repository sarà il contenitore di tutte le attività che verranno propos
 
 ### Contatti
 
-oii.unitn@gmail.com oppure lotitoqf@gmail.com
+gabriele.masina@studenti.unitn.it
 
 ### Team
 
