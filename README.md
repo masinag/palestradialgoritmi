@@ -26,8 +26,4 @@ oii.unitn@gmail.com oppure lotitoqf@gmail.com
 
 ### Team
 
-[Francesco Lotito](https://github.com/FraLotito)
-
-[Giulia Carocari](https://github.com/geeooleea)
-
-[Marta Fornasier](https://github.com/MartaFornasier)
+[Gabriele Masina](https://github.com/masinag)
