@@ -465,7 +465,8 @@ int main(){
     double x, y;
     cout << "Inserire due numeri reali: " << endl;
     cin >> x >> y;
-    cout << "Il maggiore tra " << x << " e " << y << " è: " << max(x, y) << endl;
+    double massimo = max(x, y);
+    cout << "Il maggiore tra " << x << " e " << y << " è: " << massimo << endl;
     return 0;
 }
 ```
