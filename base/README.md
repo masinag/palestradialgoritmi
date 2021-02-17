@@ -340,9 +340,10 @@ In questo esempio verrà chiesto all'utente di inserire un numero finché tale n
 
 
 ## Array
-Un array rappresenta una sequenza di dati dello stesso tipo, nella quale gli elementi si distinguono uno dall’altro attraverso un indice che indica la loro posizione, dove il primo elemento ha indice 0. Per accedere all'`i`-esimo elemento dell'array `v` scriviamo `v[i]`.
+Un array rappresenta una sequenza di dati dello stesso tipo.
+Gli elementi sono identificati dalla loro posizione (detta anche indice) nell'array, dove il primo elemento ha indice 0. Per accedere all'`i`-esimo elemento dell'array `v` scriviamo `v[i]`.
 
-Gli array hanno dimensione statica, nota a tempo di compilazione, e perciò non può dipendere da una variabile il cui valore sarà noto solo durante l'esecuzione del programma.
+Gli array hanno dimensione statica, nota a tempo di compilazione, e perciò non può dipendere da una variabile il cui valore sarà noto solo durante l'esecuzione del programma (anche se alcuni compilatori permettono di usare una variabile come dimensione, ma dovrebbe essere evitato).
 
 Per aggirare il problema, dichiariamo un array con dimensione massima molto grande (la più grande specificata dal problema) e teniamo in una variabile la dimensione effettiva `n`, che sarà minore o uguale a quella massima. 
 
@@ -366,6 +367,7 @@ int main(){
     // ATT:
     // ERRORE: int vv[n]; (i c-array devono avere dimensione dichiarata a compile-time)
     // OK: int vv[5];  // però se si dichiara l'array nel main ( o in una funzione) i valori non vengono inizializzati
+    // ALTERNATIVA: vector<int> vv(n);
 
     cout << "Inserire "<<n<<" interi:" << endl;
     for (int i = 0; i < n; i++) {
