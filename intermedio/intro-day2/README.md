@@ -8,6 +8,7 @@
 * [piastrelle](https://training.olinfo.it/#/task/piastrelle/statement) - Own
 * [sommelier](https://training.olinfo.it/#/task/sommelier/statement) - OII territoriali 2014
 * [grandprix](https://training.olinfo.it/#/task/grandprix/statement) - OII territoriali 2012
+* [mappa](https://training.olinfo.it/#/task/mappa/statement) - OII territoriali 2008
 
 ## Bonus
 Avete risolto tutti i problemi della settimana ed avete voglia di farne altri? :sunglasses:
