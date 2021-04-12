@@ -2,6 +2,9 @@
 
 ## Problemi della settimana
 * [ponti](https://training.olinfo.it/#/task/ponti/statement) - Own
+* [paper](https://training.olinfo.it/#/task/abc_paper/statement) - ABC2017
+* [ciclismo](https://training.olinfo.it/#/task/ois_ciclismo/statement) - OIS2016 
+* [nemesi](https://training.olinfo.it/#/task/nemesi/statement) - OII 2015
 * [sentieri](https://training.olinfo.it/#/task/sentieri/statement) - OII territoriali 2014
 * [tecla](https://training.olinfo.it/#/task/tecla/statement) - OII territoriali 2017
 * [dijkstra](https://training.olinfo.it/#/task/dijkstra/statement) - Volterra
