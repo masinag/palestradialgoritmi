@@ -2,6 +2,7 @@
 
 ## Problemi della settimana
 * [ponti](https://training.olinfo.it/#/task/ponti/statement) - Own
+* [spesa](https://training.olinfo.it/#/task/spesa/statement) - OIS finale
 * [paper](https://training.olinfo.it/#/task/abc_paper/statement) - ABC2017
 * [ciclismo](https://training.olinfo.it/#/task/ois_ciclismo/statement) - OIS2016 
 * [nemesi](https://training.olinfo.it/#/task/nemesi/statement) - OII 2015
