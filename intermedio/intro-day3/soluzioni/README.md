@@ -1,4 +1,11 @@
 # Soluzioni Day3
+* ## Ciclismo
+### Breve spiegazione del testo
+Ci viene dato un grafo non orientato di incroci collegati da strade, dove ogni incrocio ha un'altezza. Partendo dal nodo 0 "facciamo un giro" spostandoci ogni volta nell'incrocio vicino di altezza minima, escluso quello da cui proveniamo. Continuiamo così finchè entriamo in un ciclo, oppure in un "vicolo cieco".
+
+### Idee generali per risolvere l'esercizio
+Dobbiamo solamente implementare l'algoritmo che ci viene indicato: partendo dal nodo 0, ad ogni step scelgo il nodo successivo secondo la regola indicata. Continuo così finchè entro in un "vicolo cieco" oppure torno in un nodo già visitato.
+Nel codice delle soluzioni è presente anche uno pseudo-codice che indica ad alto livello quali sono gli step da implementare.
 
 * ## Dijkstra e MST
 ### Breve spiegazione del testo
