@@ -5,6 +5,25 @@ ofstream out("output.txt");
 
 vector<vector<int>> grafo;
 vector<int> altezza; // altezza[i] è l'altezza del nodo i
+
+/**
+ * Idea (Pseudo-codice)
+ * while il giro non è terminato
+ *   - trovo il prossimo nodo: nodo_successivo
+ *       nodo_successivo non trovato
+ *       per ogni nodo vicino "nodo_vicino" a nodo_corrente che non sia nodo_precedente:
+ *           if (nodo_successivo non trovato) oppure altezza[nodo_vicino] < altezza[nodo_successivo]:
+ *               nodo_successivo = nodo_vicino
+ *   - if (nodo_successivo è già visitato)            ----> ciclo
+ *              oppure (nodo_successivo non esiste)   ----> vicolo cieco
+ *       termino il giro e in nodo_corrente salvo il nodo in cui mi sono fermato:
+ *       quello corrente se sono in un vicolo cieco oppure quello successivo 
+ *       se sono entrato in un ciclo
+ *   - else
+ *       nodo_precedente = nodo_corrente
+ *       nodo_corrente = nodo_successivo
+ *       segno nodo_corrente come visitato
+ */
 int giro_in_bici(int partenza){
     // nodo_corrente 
     // nodo_precedente
@@ -13,13 +32,7 @@ int giro_in_bici(int partenza){
     vector<bool> visitato(grafo.size(), false);
     visitato[nodo_corrente] = true;
 
-    // while non devo fermarmi
     while (!stop){
-    //      - trovo il prossimo nodo: nodo_successivo
-    //          nodo_successivo non trovato
-    //          per ogni nodo vicino "nodo_vicino" a nodo_corrente che non sia nodo_precedente:
-    //              se (nodo_successivo non trovato) oppure altezza[nodo_vicino] < altezza[nodo_successivo]:
-    //                  nodo_successivo = nodo_vicino
         int nodo_successivo = -1;
         for (int nodo_vicino : grafo[nodo_corrente]){
             if (nodo_vicino != nodo_precedente) {
@@ -28,11 +41,6 @@ int giro_in_bici(int partenza){
                 }
             }
         }
-    //      - if (nodo_successivo è già visitato) oppure (nodo_successivo non esiste)
-    //          termino il giro e in nodo_corrente salvo il nodo in cui mi sono fermato
-    //      - else
-    //          nodo_precedente = nodo_corrente
-    //          nodo_corrente = nodo_successivo 
         if (nodo_successivo == -1 || visitato[nodo_successivo]) {
             if (nodo_successivo != -1)
                 nodo_corrente = nodo_successivo;
